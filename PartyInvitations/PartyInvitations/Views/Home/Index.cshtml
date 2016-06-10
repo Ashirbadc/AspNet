@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Party!!";
+}
+
+<div class="text-center">
+    
+    <h2>JOIN US!!</h2>
+
+    <p>We're having a Bash, let's crack ON!</p>
+
+    <img src="~/Images/hd_party_wallpaper.jpg" height="80%" width="80%"/>
+
+    <br />
+    <br />
+
+    @*This creates a link with text "RSVP now" leading to the action method RsvpForm*@
+    <div class="btn btn-success">   
+    @Html.ActionLink("RSVP Now", "RsvpForm")
+
+        </div>
+    </div>

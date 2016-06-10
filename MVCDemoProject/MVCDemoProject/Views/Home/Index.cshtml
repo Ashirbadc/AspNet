@@ -1,0 +1,24 @@
+﻿@using MVCDemoProject.Models
+    @model IEnumerable<Album>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Album Library</h2>
+
+    @foreach(Album r in Model)
+    {
+        <ol>
+
+        <li>@r.title</li>
+        <li>@r.artist</li>
+        <li>@r.format</li>
+        <li>@r.price<hr /><br /></li>
+
+      </ol>
+    }
+
+<
+
+
